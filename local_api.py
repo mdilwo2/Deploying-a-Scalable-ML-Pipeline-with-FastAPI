@@ -30,9 +30,9 @@ data = {
 }
 
 # TODO: send a POST using the data above
-response_post = requests.post("http://127.0.0.1:8000/", json=data)
+response_post = requests.post("http://127.0.0.1:8000/data/", json=data)
 
 # TODO: print the status code
-print(f"Status Code: {response.status_code}")
+print(f"Post Status Code: {response_post.status_code}")
 # TODO: print the result
-print(f"Result: {response.json()}")
+print(f"Post Result: {response_post.json()}")

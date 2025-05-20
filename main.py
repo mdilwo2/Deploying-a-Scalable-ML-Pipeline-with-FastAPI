@@ -26,9 +26,9 @@ class Data(BaseModel):
     hours_per_week: int = Field(..., example=40, alias="hours-per-week")
     native_country: str = Field(..., example="United-States", alias="native-country")
 
-encoder_path = 'model/encoder.pkl
-model_path = 'model/model.pkl
-1b_path = 'model/1b.pkl'
+encoder_path = 'model/encoder.pkl'
+model_path = 'model/model.pkl'
+lb_path = 'model/lb.pkl'
 encoder = load_model(encoder_path)
 model = load_model(model_path)
 
@@ -40,8 +40,6 @@ app = FastAPI()
 async def get_root():
     """ Say hello!"""
     return {"message": "Welcome to the Census Income Prediction API"}
-    pass
-
 
 # TODO: create a POST on a different path that does model inference
 @app.post("/data/")
