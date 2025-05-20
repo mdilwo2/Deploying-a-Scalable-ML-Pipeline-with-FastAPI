@@ -23,9 +23,9 @@ Precision: Measures accuracy of positive predictions.
 Recall: Measures ability of the model to identify relevent instances.
 F1 Score: Provides a single metric for model performance.
 Overall Performance
-Precision: 0.7376
-Recall: 0.6288
-F1 Score: 0.6789
+Precision: 0.7419
+Recall: 0.6384
+F1 Score: 0.6863
 
 ## Ethical Considerations
 It is important to consider ethical implications. This could potentially be bias in the training data, and the potential impact on individuals. There should be efforts taken to ensure the model does not disproportionatley affect any particular group.
